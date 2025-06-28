@@ -37,10 +37,11 @@ async function main() {
   console.log(`TotalSupply ${totalSupply}`);
   // Get ERC20 balance
 
-  const userAddress = "0x420ef1f25563593aF5FE3f9b9d3bC56a8bd8c104";
+  const userAddress = "0x37305B1cD40574E4C5Ce33f8e8306Be057fD7341";
   const balance = await provider.getBalance(userAddress);
 
   console.log("Balance of", balance);
+  console.log(`Balance of", ${ethers.formatUnits(balance, decimals)}`);
 
   // Log ERC20 balance
 }
